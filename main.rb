@@ -4,15 +4,15 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 
 get '/' do
-  erb :home
+  erb :home, layout => :layout
 end
 
 get '/about' do
-  erb :about
+  erb :about, layout => :layout
 end
 
 get '/contact' do
-  erb :contact
+  erb :contact, layout => :layout
 end
 
 __END__
