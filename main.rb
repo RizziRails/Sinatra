@@ -1,7 +1,9 @@
 #! /usr/bin/env ruby
 
 require 'sinatra'
-require 'sinatra/reloader' if development?
+
+set :public_folder, 'public'
+set :views, 'views'
 
 get '/' do
   erb :home
